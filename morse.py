@@ -75,14 +75,14 @@ def morsetranslate():
     for i in range(len(msg)):
         print(msg[i])
         if msg[i]==" ":
-            sleep(5)
+            sleep(4)
         elif msg[i] in dic:
             lst=dic[msg[i]]
             for j in range(len(lst)):
                 if lst[j]!=0:
                     Beep(f,lst[j])
                 else:
-                    sleep(3)
+                    sleep(2)
         elif msg[i]=="\n":
             pass
         else:
